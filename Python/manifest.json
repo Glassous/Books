@@ -1,0 +1,53 @@
+{
+  "title": "Python 手册",
+  "version": "1",
+  "root": "/docs",
+  "children": [
+    {
+      "title": "Python 语言参考手册",
+      "path": "python-language",
+      "children": [
+        {
+          "title": "基础语法",
+          "path": "basic-syntax",
+          "children": [
+            {
+              "title": "概述",
+              "path": "overview.md"
+            },
+            {
+              "title": "语法分析",
+              "path": "syntax-analysis",
+              "children": [
+                {
+                  "title": "1.1 占位",
+                  "path": "1-1-placeholder.md"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "FastApi",
+      "path": "fastapi",
+      "children": [
+        {
+          "title": "概述",
+          "path": "index.md"
+        }
+      ]
+    },
+    {
+      "title": "Langchain",
+      "path": "langchain",
+      "children": [
+        {
+          "title": "概述",
+          "path": "index.md"
+        }
+      ]
+    }
+  ]
+}
