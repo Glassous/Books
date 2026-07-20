@@ -22,6 +22,5 @@ jobs:
           secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
           bucket: ${{ secrets.COS_BUCKET }}
           region: ${{ secrets.COS_REGION }}
-          local_path: .
-          remote_path: /
-          clean: false
+          args: upload -r . /
+
