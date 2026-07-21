@@ -1,7 +1,7 @@
 {
   "title": "Python 手册",
   "version": "1",
-  "root": "/docs",
+  "root": "",
   "children": [
     {
       "title": "Python 语言参考手册",
