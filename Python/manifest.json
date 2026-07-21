@@ -8,21 +8,36 @@
       "path": "python-language",
       "children": [
         {
+          "title": "概述",
+          "path": "overview",
+          "children": [
+            { "title": "Python 介绍", "path": "python-intro.md" },
+            { "title": "环境配置", "path": "environment-setup.md" },
+            { "title": "PyCharm 安装与配置", "path": "pycharm-setup.md" },
+            { "title": "VS Code 的 Python 配置", "path": "vscode-python-setup.md" }
+          ]
+        },
+        {
           "title": "基础语法",
           "path": "basic-syntax",
           "children": [
             {
-              "title": "概述",
-              "path": "overview.md"
-            },
-            {
-              "title": "语法分析",
-              "path": "syntax-analysis",
+              "title": "第一章",
+              "path": "chapter1",
               "children": [
-                {
-                  "title": "1.1 占位",
-                  "path": "1-1-placeholder.md"
-                }
+                { "title": "本章汇总", "path": "1-0-summary.md" },
+                { "title": "1.1 字面量", "path": "1-1-literals.md" },
+                { "title": "1.2 变量", "path": "1-2-variables.md" },
+                { "title": "1.3 标识符", "path": "1-3-identifiers.md" },
+                { "title": "1.4 数据类型", "path": "1-4-data-types.md" },
+                { "title": "1.5 字符串定义", "path": "1-5-string-definition.md" },
+                { "title": "1.6 字符串拼接", "path": "1-6-string-concatenation.md" },
+                { "title": "1.7 字符串格式化", "path": "1-7-string-formatting.md" },
+                { "title": "1.8 输入与输出", "path": "1-8-input-output.md" },
+                { "title": "1.9 算术运算符", "path": "1-9-arithmetic-operators.md" },
+                { "title": "1.10 赋值运算符", "path": "1-10-assignment-operators.md" },
+                { "title": "1.11 比较运算符", "path": "1-11-comparison-operators.md" },
+                { "title": "1.12 逻辑运算符", "path": "1-12-logical-operators.md" }
               ]
             }
           ]
