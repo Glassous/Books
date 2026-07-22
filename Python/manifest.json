@@ -2,9 +2,8 @@
   "title": "Python 手册",
   "version": "1",
   "root": "",
-              "children": [
-                { "title": "本章汇总", "path": "3-0-summary.md" },
-                {
+  "children": [
+    {
       "title": "Python 语言参考手册",
       "path": "python-language",
       "children": [
@@ -58,6 +57,7 @@
               "title": "第三章 数据存储容器",
               "path": "chapter3",
               "children": [
+                { "title": "本章汇总", "path": "3-0-summary.md" },
                 {
                   "title": "列表",
                   "path": "list",
@@ -113,20 +113,14 @@
       "title": "FastApi",
       "path": "fastapi",
       "children": [
-        {
-          "title": "概述",
-          "path": "index.md"
-        }
+        { "title": "概述", "path": "index.md" }
       ]
     },
     {
       "title": "LangChain",
       "path": "langchain",
       "children": [
-        {
-          "title": "概述",
-          "path": "index.md"
-        }
+        { "title": "概述", "path": "index.md" }
       ]
     }
   ]
