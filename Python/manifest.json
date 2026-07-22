@@ -177,6 +177,185 @@
                 { "title": "5.7 异常", "path": "5-7-exception.md" },
                 { "title": "5.8 案例：银行账户管理系统", "path": "cases/5-8-case.md" }
               ]
+            },
+            {
+              "title": "第六章 推导式与生成器",
+              "path": "chapter6",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第七章 文件与IO",
+              "path": "chapter7",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第八章 内置函数",
+              "path": "chapter8",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "高级特性",
+          "path": "advanced",
+          "children": [
+            {
+              "title": "第一章 装饰器深度",
+              "path": "chapter1",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第二章 元编程与描述符",
+              "path": "chapter2",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第三章 类型系统",
+              "path": "chapter3",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第四章 上下文管理器",
+              "path": "chapter4",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第五章 数据结构与算法",
+              "path": "chapter5",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第六章 内存管理与性能",
+              "path": "chapter6",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第七章 并发编程",
+              "path": "chapter7",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "标准库",
+          "path": "stdlib",
+          "children": [
+            {
+              "title": "第一章 文本与正则",
+              "path": "chapter1",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第二章 日期与时间",
+              "path": "chapter2",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第三章 数学与统计",
+              "path": "chapter3",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第四章 数据持久化",
+              "path": "chapter4",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第五章 系统与文件",
+              "path": "chapter5",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第六章 集合与工具",
+              "path": "chapter6",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第七章 日志与测试",
+              "path": "chapter7",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第八章 网络与通信",
+              "path": "chapter8",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "工程实践",
+          "path": "toolchain",
+          "children": [
+            {
+              "title": "第一章 PEP 8 与代码风格",
+              "path": "chapter1",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第二章 包管理与虚拟环境",
+              "path": "chapter2",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第三章 项目结构与打包",
+              "path": "chapter3",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第四章 静态分析与类型检查",
+              "path": "chapter4",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
+            },
+            {
+              "title": "第五章 设计模式",
+              "path": "chapter5",
+              "children": [
+                { "title": "概述", "path": "index.md" }
+              ]
             }
           ]
         } 
