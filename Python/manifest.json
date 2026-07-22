@@ -104,6 +104,33 @@
                   ]
                 }
               ]
+            },
+            {
+              "title": "第四章 函数",
+              "path": "chapter4",
+              "children": [
+                { "title": "本章汇总", "path": "4-0-summary.md" },
+                { "title": "4.1 函数定义", "path": "4-1-function-definition.md" },
+                { "title": "4.2 参数与返回值", "path": "4-2-parameters-return.md" },
+                { "title": "4.3 函数说明文档", "path": "4-3-docstring.md" },
+                { "title": "4.4 函数嵌套调用", "path": "4-4-nested-call.md" },
+                { "title": "4.5 变量作用域", "path": "4-5-scope.md" },
+                { "title": "4.6 传参方式", "path": "4-6-parameter-passing.md" },
+                { "title": "4.7 默认参数", "path": "4-7-default-parameters.md" },
+                { "title": "4.8 不定长参数", "path": "4-8-args-kwargs.md" },
+                { "title": "4.9 函数类型", "path": "4-9-function-type.md" },
+                { "title": "4.10 匿名函数", "path": "4-10-lambda.md" },
+                {
+                  "title": "4.11 案例",
+                  "path": "cases",
+                  "children": [
+                    { "title": "递归", "path": "4-11-case-recursion.md" },
+                    { "title": "阶乘", "path": "4-11-case-factorial.md" },
+                    { "title": "斐波那契数列", "path": "4-11-case-fibonacci.md" },
+                    { "title": "汉诺塔", "path": "4-11-case-hanoi.md" }
+                  ]
+                }
+              ]
             }
           ]
         }
