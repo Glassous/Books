@@ -31,17 +31,35 @@
 - 实例属性：通过 `self` 定义，每个实例独立
 - 类属性：在类中直接定义，所有实例共享
 - 实例属性优先于类属性
-- `@property` 装饰器将方法转为属性
+- `@property` 装饰器将方法转为属性（getter/setter/deleter）
+- 计算属性：`@property` 实现实时计算
+- 缓存属性：通过缓存避免重复计算
+- 数据验证：setter 中验证输入
 - `_` 单下划线约定保护，`__` 双下划线名称修饰
 
-### 5.5 异常
+### 5.5 @classmethod 与 @staticmethod
+- `@classmethod`：接收类参数 `cls`，可访问类属性
+- `@staticmethod`：不接收类或实例，类似普通函数
+- 工厂方法：`@classmethod` 从不同输入创建实例
+- 工具方法：`@staticmethod` 组织相关功能
+
+### 5.6 继承与多态
+- 基本继承：`class B(A)` 子类获取父类属性和方法
+- `super()`：调用父类方法
+- 方法重写：子类覆盖或扩展父类方法
+- 多态：不同类的对象响应相同接口
+- `isinstance()` / `issubclass()`：类型检查
+- 多继承：一个类继承多个父类（MRO）
+- 抽象基类：`ABC` + `@abstractmethod` 定义接口规范
+
+### 5.7 异常
 - `try-except` 捕获异常
 - `else` 无异常时执行，`finally` 始终执行
 - 自定义异常继承 `Exception`
 - `raise` 主动抛出异常
 - 使用 `with` 语句简化资源管理
 
-### 5.6 案例：银行账户管理系统
+### 5.8 案例：银行账户管理系统
 - 账户基类：存款、取款、转账、交易记录
 - 储蓄账户：利率计算、存款期限
 - 信用卡：透支额度、手续费
@@ -352,7 +370,12 @@ print("=" * 50)
 | 魔方方法 | 运算符重载 | `__str__`, `__add__`, `__eq__` |
 | 实例属性 | 每个实例独立 | `self.name = name` |
 | 类属性 | 所有实例共享 | `species = "犬科"` |
-| @property | 方法转属性 | `@property; def x(self):` |
+| @property | getter/setter/deleter | `@property; @x.setter` |
+| @classmethod | 类方法、工厂方法 | `@classmethod; def from_str(cls)` |
+| @staticmethod | 静态工具方法 | `@staticmethod; def util():` |
+| 继承 | 代码复用、super() | `class B(A): super().__init__()` |
+| 多态 | 统一接口 | `isinstance(obj, Parent)` |
+| 抽象类 | 接口规范 | `class A(ABC): @abstractmethod` |
 | 私有约定 | 伪私有属性 | `_x`, `__x` |
 | try-except | 异常捕获 | `try: ... except: ...` |
 | 自定义异常 | 继承 Exception | `class MyError(Exception):` |

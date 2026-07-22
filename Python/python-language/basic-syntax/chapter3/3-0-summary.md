@@ -1,6 +1,6 @@
 # 第三章 汇总
 
-本章汇总了 Python 五种核心数据容器的知识点，包含速览、示例代码和完整示例文件。
+本章汇总了 Python 八种核心数据容器的知识点，包含速览、示例代码和完整示例文件。
 
 ---
 
@@ -35,6 +35,24 @@
 - **创建**：`{}`、`dict()`、字典推导式
 - **常用**：`get()`、`keys()`、`values()`、`items()`、`update()`
 - **用途**：结构化数据、映射表、缓存、计数器
+
+### 3.6 range
+- **特点**：不可变整数序列、惰性计算
+- **创建**：`range(stop)`、`range(start, stop)`、`range(start, stop, step)`
+- **常用**：`for` 循环、列表生成、步进遍历
+- **用途**：循环计数、数字序列、避免大列表内存占用
+
+### 3.7 frozenset
+- **特点**：不可变集合、可哈希
+- **创建**：`frozenset()`、`frozenset(iterable)`
+- **运算**：`|`（并集）、`&`（交集）、`-`（差集）、`^`（对称差）
+- **用途**：字典键、集合元素、常量集合、缓存键
+
+### 3.8 bytes 与 bytearray
+- **特点**：`bytes` 不可变、`bytearray` 可变
+- **创建**：`b"hello"`、`bytes(5)`、`bytearray(10)`
+- **转换**：`encode()`、`decode()`、`.hex()`、`fromhex()`
+- **用途**：二进制数据、网络通信、文件读写、加密
 
 ---
 
@@ -294,6 +312,10 @@ print("=" * 50)
 | tuple | 否 | 是 | 是 | `()` | `count`, `index` |
 | set | 是 | 否 | 否 | `{}` | `add`, `remove`, `update` |
 | dict | 是 | 是(3.7+) | - | `{}` | `get`, `keys`, `items` |
+| range | 否 | 是 | - | `range()` | 索引、切片、`len` |
+| frozenset | 否 | 否 | 否 | `frozenset()` | `|`, `&`, `-`, `^` |
+| bytes | 否 | 是 | - | `b"..."`, `bytes()` | `decode`, `hex`, `fromhex` |
+| bytearray | 是 | 是 | - | `bytearray()` | `append`, `insert`, `pop` |
 
 ## 容器选择指南
 
@@ -306,3 +328,6 @@ print("=" * 50)
 | 需要键值映射 | 字典 |
 | 文本处理 | 字符串 |
 | 栈 / 队列 | 列表 |
+| 数字序列循环 | range |
+| 不可变集合 / 字典键 | frozenset |
+| 二进制数据处理 | bytes / bytearray |

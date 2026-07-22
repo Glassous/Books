@@ -37,7 +37,8 @@
                 { "title": "1.9 算术运算符", "path": "1-9-arithmetic-operators.md" },
                 { "title": "1.10 赋值运算符", "path": "1-10-assignment-operators.md" },
                 { "title": "1.11 比较运算符", "path": "1-11-comparison-operators.md" },
-                { "title": "1.12 逻辑运算符", "path": "1-12-logical-operators.md" }
+                { "title": "1.12 逻辑运算符", "path": "1-12-logical-operators.md" },
+                { "title": "1.13 位运算符", "path": "1-13-bitwise-operators.md" }
               ]
             },
             {
@@ -102,6 +103,33 @@
                     { "title": "字典用法详解", "path": "3-5-dict-usage.md" },
                     { "title": "字典案例", "path": "3-5-dict-cases.md" }
                   ]
+                },
+                {
+                  "title": "range",
+                  "path": "range",
+                  "children": [
+                    { "title": "range 介绍", "path": "3-6-range-intro.md" },
+                    { "title": "range 用法详解", "path": "3-6-range-usage.md" },
+                    { "title": "range 案例", "path": "3-6-range-cases.md" }
+                  ]
+                },
+                {
+                  "title": "frozenset",
+                  "path": "frozenset",
+                  "children": [
+                    { "title": "frozenset 介绍", "path": "3-7-frozenset-intro.md" },
+                    { "title": "frozenset 用法详解", "path": "3-7-frozenset-usage.md" },
+                    { "title": "frozenset 案例", "path": "3-7-frozenset-cases.md" }
+                  ]
+                },
+                {
+                  "title": "bytes 与 bytearray",
+                  "path": "bytes",
+                  "children": [
+                    { "title": "bytes 与 bytearray 介绍", "path": "3-8-bytes-intro.md" },
+                    { "title": "bytes 与 bytearray 用法详解", "path": "3-8-bytes-usage.md" },
+                    { "title": "bytes 与 bytearray 案例", "path": "3-8-bytes-cases.md" }
+                  ]
                 }
               ]
             },
@@ -119,19 +147,20 @@
                 { "title": "4.7 默认参数", "path": "4-7-default-parameters.md" },
                 { "title": "4.8 不定长参数", "path": "4-8-args-kwargs.md" },
                 { "title": "4.9 函数类型", "path": "4-9-function-type.md" },
-                { "title": "4.10 匿名函数", "path": "4-10-lambda.md" },
-                { "title": "4.11 函数类型注解", "path": "4-11-type-annotations.md" },
+                { "title": "4.10 装饰器", "path": "4-10-decorator.md" },
+                { "title": "4.11 匿名函数", "path": "4-11-lambda.md" },
+                { "title": "4.12 函数类型注解", "path": "4-12-type-annotations.md" },
                 {
-                  "title": "4.12 案例",
+                  "title": "4.13 案例",
                   "path": "cases",
                   "children": [
-                    { "title": "递归", "path": "4-12-case-recursion.md" },
-                    { "title": "阶乘", "path": "4-12-case-factorial.md" },
-                    { "title": "斐波那契数列", "path": "4-12-case-fibonacci.md" },
-                    { "title": "汉诺塔", "path": "4-12-case-hanoi.md" }
+                    { "title": "递归", "path": "4-13-case-recursion.md" },
+                    { "title": "阶乘", "path": "4-13-case-factorial.md" },
+                    { "title": "斐波那契数列", "path": "4-13-case-fibonacci.md" },
+                    { "title": "汉诺塔", "path": "4-13-case-hanoi.md" }
                   ]
                 },
-                { "title": "4.13 模块", "path": "4-13-modules.md" }
+                { "title": "4.14 模块", "path": "4-14-modules.md" }
               ]
             },
             {
@@ -143,8 +172,10 @@
                 { "title": "5.2 实例方法", "path": "5-2-instance-methods.md" },
                 { "title": "5.3 魔方方法", "path": "5-3-magic-methods.md" },
                 { "title": "5.4 实例属性与类属性", "path": "5-4-attributes.md" },
-                { "title": "5.5 异常", "path": "5-5-exception.md" },
-                { "title": "5.6 案例：银行账户管理系统", "path": "cases/5-6-case.md" }
+                { "title": "5.5 @classmethod 与 @staticmethod", "path": "5-5-classmethod-staticmethod.md" },
+                { "title": "5.6 继承与多态", "path": "5-6-inheritance.md" },
+                { "title": "5.7 异常", "path": "5-7-exception.md" },
+                { "title": "5.8 案例：银行账户管理系统", "path": "cases/5-8-case.md" }
               ]
             }
           ]

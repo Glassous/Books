@@ -131,7 +131,9 @@ print(p.species)   # Human
 
 ## @property 装饰器
 
-将方法转换为属性访问：
+`@property` 将方法转换为属性访问，实现对属性的精细控制。
+
+### getter 与 setter
 
 ```python
 class Temperature:
@@ -140,26 +142,116 @@ class Temperature:
 
     @property
     def celsius(self):
+        """getter：像属性一样读取"""
         return self._celsius
 
     @celsius.setter
     def celsius(self, value):
+        """setter：赋值时进行验证"""
         if value < -273.15:
             raise ValueError("温度不能低于绝对零度")
         self._celsius = value
 
-    @property
-    def fahrenheit(self):
-        return self._celsius * 9 / 5 + 32
+    @celsius.deleter
+    def celsius(self):
+        """deleter：删除时处理"""
+        print("删除温度数据")
+        del self._celsius
 
 temp = Temperature(25)
-print(temp.celsius)     # 25（像属性一样访问）
-print(temp.fahrenheit)  # 77.0
+print(temp.celsius)      # 25（调用 getter）
+temp.celsius = 30        # 调用 setter
+# temp.celsius = -300    # ValueError
+# del temp.celsius       # 删除温度数据
+```
 
-temp.celsius = 30
-print(temp.fahrenheit)  # 86.0
+### 计算属性
 
-# temp.celsius = -300  # ValueError
+```python
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    @property
+    def area(self):
+        """面积（只读，每次实时计算）"""
+        return self.width * self.height
+
+    @property
+    def perimeter(self):
+        """周长"""
+        return 2 * (self.width + self.height)
+
+r = Rectangle(3, 4)
+print(r.area)       # 12（像属性一样访问）
+print(r.perimeter)  # 14
+r.width = 5
+print(r.area)       # 20（自动更新）
+```
+
+### 缓存属性
+
+```python
+class DataProcessor:
+    def __init__(self, data):
+        self._data = data
+        self._cached_result = None
+
+    @property
+    def data(self):
+        return self._data
+
+    @data.setter
+    def data(self, value):
+        self._data = value
+        self._cached_result = None  # 数据变化时清除缓存
+
+    @property
+    def result(self):
+        if self._cached_result is None:
+            print("计算中...")
+            self._cached_result = sum(x ** 2 for x in self._data)
+        return self._cached_result
+
+dp = DataProcessor([1, 2, 3, 4, 5])
+print(dp.result)  # 计算中... 55
+print(dp.result)  # 55（命中缓存）
+
+dp.data = [2, 3, 4]
+print(dp.result)  # 计算中... 29（缓存已清除）
+```
+
+### 数据验证
+
+```python
+class User:
+    def __init__(self, name, age):
+        self.name = name
+        self._age = 0
+        self.age = age  # 通过 setter 赋值
+
+    @property
+    def age(self):
+        return self._age
+
+    @age.setter
+    def age(self, value):
+        if not isinstance(value, int):
+            raise TypeError("年龄必须是整数")
+        if not 0 <= value <= 150:
+            raise ValueError("年龄必须在 0-150 之间")
+        self._age = value
+
+    @property
+    def is_adult(self):
+        return self._age >= 18
+
+u = User("Alice", 25)
+print(u.age)       # 25
+print(u.is_adult)  # True
+# u.age = -5       # ValueError
+# u.age = "abc"    # TypeError
 ```
 
 ## 私有属性约定
