@@ -133,9 +133,22 @@
                 },
                 { "title": "4.13 模块", "path": "4-13-modules.md" }
               ]
+            },
+            {
+              "title": "第五章 面向对象基础",
+              "path": "chapter5",
+              "children": [
+                { "title": "本章汇总", "path": "5-0-summary.md" },
+                { "title": "5.1 类与对象", "path": "5-1-class-object.md" },
+                { "title": "5.2 实例方法", "path": "5-2-instance-methods.md" },
+                { "title": "5.3 魔方方法", "path": "5-3-magic-methods.md" },
+                { "title": "5.4 实例属性与类属性", "path": "5-4-attributes.md" },
+                { "title": "5.5 异常", "path": "5-5-exception.md" },
+                { "title": "5.6 案例：银行账户管理系统", "path": "cases/5-6-case.md" }
+              ]
             }
           ]
-        }
+        } 
       ]
     },
     {
