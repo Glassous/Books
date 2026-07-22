@@ -365,7 +365,7 @@
     {
       "title": "FastApi",
       "path": "fastapi",
-      "url": "https://fastapi.tiangolo.com/",
+      "url": "https://fastapi.tiangolo.com/zh/tutorial/",
       "icon": "https://file.glassous.top/%E5%9B%BE%E6%A0%87%E5%BA%93/FastAPI_logo.svg",
       "children": [
         { "title": "概述", "path": "index.md" }
