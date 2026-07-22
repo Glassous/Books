@@ -6,6 +6,7 @@
     {
       "title": "Python 语言参考手册",
       "path": "python-language",
+      "icon": "https://file.glassous.top/uploads/1782626183-324326.svg",
       "children": [
         {
           "title": "概述",
@@ -364,6 +365,8 @@
     {
       "title": "FastApi",
       "path": "fastapi",
+      "url": "https://fastapi.tiangolo.com/",
+      "icon": "https://file.glassous.top/%E5%9B%BE%E6%A0%87%E5%BA%93/FastAPI_logo.svg",
       "children": [
         { "title": "概述", "path": "index.md" }
       ]
@@ -371,6 +374,8 @@
     {
       "title": "LangChain",
       "path": "langchain",
+      "url": "https://python.langchain.com/",
+      "icon": "https://file.glassous.top/%E5%9B%BE%E6%A0%87%E5%BA%93/langchain-color.svg",
       "children": [
         { "title": "概述", "path": "index.md" }
       ]
