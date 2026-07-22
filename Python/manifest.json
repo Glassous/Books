@@ -120,16 +120,18 @@
                 { "title": "4.8 不定长参数", "path": "4-8-args-kwargs.md" },
                 { "title": "4.9 函数类型", "path": "4-9-function-type.md" },
                 { "title": "4.10 匿名函数", "path": "4-10-lambda.md" },
+                { "title": "4.11 函数类型注解", "path": "4-11-type-annotations.md" },
                 {
-                  "title": "4.11 案例",
+                  "title": "4.12 案例",
                   "path": "cases",
                   "children": [
-                    { "title": "递归", "path": "4-11-case-recursion.md" },
-                    { "title": "阶乘", "path": "4-11-case-factorial.md" },
-                    { "title": "斐波那契数列", "path": "4-11-case-fibonacci.md" },
-                    { "title": "汉诺塔", "path": "4-11-case-hanoi.md" }
+                    { "title": "递归", "path": "4-12-case-recursion.md" },
+                    { "title": "阶乘", "path": "4-12-case-factorial.md" },
+                    { "title": "斐波那契数列", "path": "4-12-case-fibonacci.md" },
+                    { "title": "汉诺塔", "path": "4-12-case-hanoi.md" }
                   ]
-                }
+                },
+                { "title": "4.13 模块", "path": "4-13-modules.md" }
               ]
             }
           ]
