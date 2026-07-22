@@ -2,8 +2,9 @@
   "title": "Python 手册",
   "version": "1",
   "root": "",
-  "children": [
-    {
+              "children": [
+                { "title": "本章汇总", "path": "3-0-summary.md" },
+                {
       "title": "Python 语言参考手册",
       "path": "python-language",
       "children": [
@@ -22,7 +23,7 @@
           "path": "basic-syntax",
           "children": [
             {
-              "title": "第一章",
+              "title": "第一章 数据存储与运算",
               "path": "chapter1",
               "children": [
                 { "title": "本章汇总", "path": "1-0-summary.md" },
@@ -41,7 +42,7 @@
               ]
             },
             {
-              "title": "第二章",
+              "title": "第二章 数据的逻辑处理",
               "path": "chapter2",
               "children": [
                 { "title": "本章汇总", "path": "2-0-summary.md" },
@@ -51,6 +52,57 @@
                 { "title": "2.4 while 循环", "path": "2-4-while-loop.md" },
                 { "title": "2.5 for 循环", "path": "2-5-for-loop.md" },
                 { "title": "2.6 嵌套循环", "path": "2-6-nested-loops.md" }
+              ]
+            },
+            {
+              "title": "第三章 数据存储容器",
+              "path": "chapter3",
+              "children": [
+                {
+                  "title": "列表",
+                  "path": "list",
+                  "children": [
+                    { "title": "列表介绍", "path": "3-1-list-intro.md" },
+                    { "title": "列表用法详解", "path": "3-1-list-usage.md" },
+                    { "title": "列表案例", "path": "3-1-list-cases.md" }
+                  ]
+                },
+                {
+                  "title": "字符串",
+                  "path": "str",
+                  "children": [
+                    { "title": "字符串介绍", "path": "3-2-str-intro.md" },
+                    { "title": "字符串用法详解", "path": "3-2-str-usage.md" },
+                    { "title": "字符串案例", "path": "3-2-str-cases.md" }
+                  ]
+                },
+                {
+                  "title": "元组",
+                  "path": "tuple",
+                  "children": [
+                    { "title": "元组介绍", "path": "3-3-tuple-intro.md" },
+                    { "title": "元组用法详解", "path": "3-3-tuple-usage.md" },
+                    { "title": "元组案例", "path": "3-3-tuple-cases.md" }
+                  ]
+                },
+                {
+                  "title": "集合",
+                  "path": "set",
+                  "children": [
+                    { "title": "集合介绍", "path": "3-4-set-intro.md" },
+                    { "title": "集合用法详解", "path": "3-4-set-usage.md" },
+                    { "title": "集合案例", "path": "3-4-set-cases.md" }
+                  ]
+                },
+                {
+                  "title": "字典",
+                  "path": "dict",
+                  "children": [
+                    { "title": "字典介绍", "path": "3-5-dict-intro.md" },
+                    { "title": "字典用法详解", "path": "3-5-dict-usage.md" },
+                    { "title": "字典案例", "path": "3-5-dict-cases.md" }
+                  ]
+                }
               ]
             }
           ]
